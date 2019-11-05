@@ -1,0 +1,155 @@
+body{
+	background-color: black;
+	background-image: url("portBG.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-attachment: fixed;
+	font-variant-caps: small-caps;
+	color: white;
+	word-break: keep-all;
+}
+p{
+	text-align: center
+	animation-delay: 0;
+	animation-duration: .5s;
+	animation-name: dimElement;
+	font-size: 24px
+}
+a{
+		animation-delay: 0;
+	animation-duration: .5s;
+	animation-name: dimElement;
+	font-size: 24px
+}
+img{
+	opacity:.9;
+	animation-delay: 0;
+	animation-duration: .5s;
+	animation-name: dimElement;
+}
+img:hover{
+	opacity: 1;
+}
+.container{
+text-align: center
+}
+h1{
+	color: white;
+	font-variant-caps: small-caps;
+	font-size: 64px
+}
+h2, h3, h4, h5, h6{
+	color: grey;
+	font-variant-caps: small-caps;
+	font-size: 32px
+}
+
+.linkNewClass{
+	color: white;
+
+}
+.linkVisitClass{
+	color: grey;
+}
+.paraText{
+	font-size: 24px;
+}
+.paraText2{
+	font-size: 24px;
+}
+.paraText3{
+	font-size: 32px;
+}
+.roundEdgesHuge{
+  border-radius: 32px;
+}
+.roundEdges{
+  border-radius: 16px;
+}
+.roundEdgesSmall{
+  border-radius: 8px;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+.buttonBorders{
+	/*not used*/
+	border-radius: 16px;
+  	background-color: black;
+  	padding: 15px 25px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+}
+.navBorders{
+	/*not used*/	
+background-color: black;
+border-radius: 16px;	
+}
+.gradientBlock{
+  background-image: linear-gradient(black, grey);
+}
+.gradBlockRound{
+  background-image: linear-gradient(black, grey);
+  border-radius: 8px;
+}
+.gradBlockRoundMed{
+  background-image: linear-gradient(black, grey);
+  border-radius: 16px;
+}
+.gradBlockRoundLarge{
+  background-image: linear-gradient(black, grey);
+  border-radius: 32px;
+}
+.gradientBlockRev{
+  background-image: linear-gradient(grey, black);
+}
+.gradBlockRevRound{
+  background-image: linear-gradient(grey, black);
+  border-radius: 8px;
+}
+.gradBlockRevRoundMed{
+  background-image: linear-gradient(grey, black);
+  border-radius: 16px;
+}
+.gradBlockRevRoundLarge{
+  background-image: linear-gradient(grey, black);
+  border-radius: 32px;
+}
+/*test animations using classes*/
+.tranDim:{
+animation-delay: 0;
+animation-duration: .125s;
+animation-name: dimElement;
+}
+@keyframes dimElement{
+	from{color: black;
+	}
+	to{color: grey;
+	}
+	0%{
+		transform:translateY(+2%)
+		transform: opacity(0)
+	}
+	15%{
+		transform:translateY(+5%)
+	}
+	100%{
+		transform:translateY(0%)
+		transform: opacity(100)
+	}	
+}
+@keyframes pageTurn{
+	0%{
+		transform:translateX(+100%)
+	}
+	50%{
+		transform:translateX(+10%)
+	}
+	100%{
+		transform:translateX(0%)
+	}	
+}
+
